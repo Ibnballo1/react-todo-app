@@ -27,7 +27,6 @@ class TodoContainer extends React.Component {
 
   // Handle Change
   handleChange = (id) => {
-    // const { todos } = this.state;
     this.setState((prevState) => ({
       todos: prevState.todos.map((todo) => {
         if (todo.id === id) {
@@ -78,7 +77,6 @@ class TodoContainer extends React.Component {
   }
 
   render() {
-    // console.log(this.addTodoItem);
     return (
       <div className="container">
         <div className="inner">
