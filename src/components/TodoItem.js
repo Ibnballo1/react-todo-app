@@ -45,7 +45,6 @@ const TodoItem = (props) => {
           className={styles.checkbox}
           onChange={() => props.handleChangeProps(id)}
         />
-        {/* {props.todo.title} */}
         <button
           type="button"
           onClick={() => props.handleDeleteProps(id)}
@@ -71,20 +70,3 @@ const TodoItem = (props) => {
 }
 
 export default TodoItem;
-
-// Class Component Version
-// export default class TodoItem extends React.Component {
-//   render() {
-//     console.log(this.props.handleChangeProps);
-//     return (
-//       <li>
-//         <input
-//           type="checkbox"
-//           checked={this.props.todo.completed}
-//           onChange={() => console.log(this.props.handleChangeProps())}
-//         />
-//         {this.props.todo.title}
-//       </li>
-//     )
-//   }
-// }
