@@ -6,7 +6,6 @@ export default class InputTodo extends Component {
   }
 
   onChange = (e) => {
-    // console.log("Changed", e.target);
     this.setState({
       [e.target.name]: e.target.value,
     })
